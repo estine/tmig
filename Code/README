@@ -1,0 +1,28 @@
+Trained Music Improvisation Generator (TMIG)
+Eli Stine & Nick Towbin-Jones
+Spring 2013
+Oberlin College
+
+Usage instructions:
+
+1. Run "java TMIG <input_midi_file> <input_chord_file> <order>"
+(Note that the input midi file and chord file must match exactly, in terms of length, or errors will occur)
+2. From there you will be prompted to input more files, or press 'n' to not have any more input
+3. Then you are prompted to enter an output chord list (the generated improvisation will use these chords)
+4. And finally, an output MIDI file location (make sure to add ".mid" as file ext.)
+5. The program will generate the MIDI file, and will prompt you if you'd like to generate more (each will be uniquely named)
+
+An example run of the program:
+
+% java TMIG ../Lazy_Bird_3_Choruses.mid ../Lazy_Bird_Chords 3
+Parsed 607 input notes, BPM detected as 252.
+More MIDI/chord list training data ('n' to stop)?: n                    
+
+Chord list to generate improv. with: ../Lazy_Bird_Chords_Output
+Output MIDI file location: Lazy_Bird_Gen.mid
+                                                                   
+Generated improvisation of 494 notes with BPM 252.                     
+Generate how many more improvisations ('n' to stop)?: n
+%
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
